@@ -1,15 +1,20 @@
 
 Pod::Spec.new do |s|
   s.name         = "MokiManageSDK"
-  s.version      = "0.0.1"
-  s.summary      = "A short description of MokiManageSDK."
-  # s.description  = <<-DESC
-  #                   An optional longer description of MokiManageSDK
-  #
-  #                   * Markdown format.
-  #                   * Don't worry about the indent, we strip it!
-  #                  DESC
-  s.homepage     = "http://github.com/MokiMobility/MokiManageSDK-iOS"
+  s.version      = "1.0.0-beta.2"
+  s.summary      = "Integrate your application with MokiManage."
+  s.description  = <<-DESC
+                    Using this SDK your application can integrate with [MokiManage](http://MokiManage.com/).
+                    This will help you monitor the applications environment like:
+                    * location
+                    * network connectivity
+                    * battery charge
+                    * memory usage
+                    * etc.
+                    
+                    This will also allow you to manage the settings of your application remotely.
+                   DESC
+  s.homepage     = "https://github.com/MokiMobility/MokiManageSDK-iOS"
   
   s.license      = {
     :type => 'Commercial',
@@ -23,7 +28,7 @@ Pod::Spec.new do |s|
   }
 
   s.author       = { "MokiMobility" => "info@mokimobility.com" }
-  s.source       = { :git => "http://github.com/MokiMobility/MokiManageSDK-iOS.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/MokiMobility/MokiManageSDK-iOS.git", :tag => "1.0.0-beta.2" }
 
   s.platform     = :ios, '5.0'
 

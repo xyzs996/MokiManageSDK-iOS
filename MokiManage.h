@@ -163,7 +163,7 @@
  
  @return Returns The MokiManage shared instance
  */
-- (void)initializeWithApiKey:(NSString *)key launchingOptions:(NSDictionary *)options enableASM:(BOOL)enableASM enableAEM:(BOOL)enableAEM asmSettingsFileName:(NSString *)fileName error:(NSError **)error;
+- (id)initializeWithApiKey:(NSString *)key launchingOptions:(NSDictionary *)options enableASM:(BOOL)enableASM enableAEM:(BOOL)enableAEM asmSettingsFileName:(NSString *)fileName error:(NSError **)error;
 
 /** Returns your Moki Manage API Key
  
@@ -464,6 +464,37 @@
  @param alertId The id of the alert found in the web interface
  */
 - (void)clearAlert:(NSString *)alertId;
+
+#pragma mark - Device Information
+///---------------------------------------------------------------------------------------
+/// @name Device Information
+///---------------------------------------------------------------------------------------
+
+/** Adds an array of tags to the device object in the Moki Dashboard
+ 
+ Send the array of tags to be added to the device so the device will be included in tag based searching and scheduled actions.
+ */
+- (void)addTags:(NSArray *)tags;
+
+/** Returns a dictionary of the meta data for the device
+ 
+ Returns the meta data that can then be used by the developer to identify the device is additional ways specific to your organization.
+ The information can be updated and resaving to the device by calling setMetaData.
+ */
+- (NSDictionary *)metaData;
+
+/** Sets meta data for the device on the device object
+ 
+ Sets meta data that can then be used by the developer to identify the device is additional ways specific to your organization.
+ */
+- (void)setMetaData:(NSDictionary *)metaData;
+
+/** Returns a support identifier
+ 
+ Returns the identifier that support personell can use to look up the device in the Moki Manage Dashboard.  The developer should
+ enroll a device into a tenant silently if not already enrolled and then should surface the identifier to the user for use in the support process.
+ */
+- (NSString *)identifierForSupport;
 
 #pragma mark - Security
 ///---------------------------------------------------------------------------------------

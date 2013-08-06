@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "MokiManageSDK"
-  s.version      = "1.0.0-beta.2"
+  s.version      = "1.0.0-rc1"
   s.summary      = "Integrate your application with MokiManage."
   s.description  = <<-DESC
                     Using this SDK your application can integrate with [MokiManage](http://MokiManage.com/).
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   }
 
   s.author       = { "MokiMobility" => "info@mokimobility.com" }
-  s.source       = { :git => "https://github.com/MokiMobility/MokiManageSDK-iOS.git", :tag => "1.0.0-beta.2" }
+  s.source       = { :git => "https://github.com/MokiMobility/MokiManageSDK-iOS.git", :tag => "1.0.0-rc1" }
 
   s.platform     = :ios, '5.0'
 

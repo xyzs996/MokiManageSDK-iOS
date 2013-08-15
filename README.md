@@ -1,3 +1,9 @@
+---------------------------------------------------------------------------------
+
+**NOTICE** THIS REPO WAS JUST A PROVING GROUND. PLEASE FIND THE _RELEASED_ SDK AT [MokiManageSDK](https://github.com/MokiMobility/MokiManageSDK/tree/ios)
+
+---------------------------------------------------------------------------------
+
 MokiManageSDK-iOS
 =================
 
